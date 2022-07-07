@@ -1,0 +1,248 @@
+.hero {
+    text-align: center;
+    padding: 20rem 0;
+    position: relative;
+}
+.hero .title {
+    line-height: 1;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.hero .text {
+    margin: 0 auto 3rem;
+    max-width: 35rem;
+}
+
+
+
+
+
+.contacts {
+    padding: 15rem 0;
+    text-align: center;
+}
+.contacts .sub-title {
+    margin-bottom: 3rem;
+}
+.contacts__item:not(:last-child) {
+    margin-bottom: 2rem;
+}
+.contacts .text--mb  {
+    max-width: 40rem;
+    margin: 0 auto 2rem;
+}
+.contacts__item-link .text {
+    transition: .3s ease-in-out;
+}
+.contacts__box {
+    margin-bottom: 6rem;
+}
+.contacts__img {
+    display: block;
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.contacts .btn {
+    margin-bottom: 5rem;
+}
+
+
+
+
+.policy__wrapper {
+    background-color: var(--second-brand-color);
+}
+.policy {
+    padding: 15rem 0;
+    text-align: center;
+}
+.policy__sub-title {
+    font-family: var(--title-font);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.policy__block {
+    max-width: 50rem;
+    margin: 0 auto;
+    background-color: var(--sub-text-color);
+    padding: 3rem;
+}
+.policy__block--top {
+    margin-bottom: 8rem;
+}
+.policy .text {
+    margin-bottom: 3rem;
+}
+
+
+
+
+
+.question {
+    padding: 15rem 0;
+    text-align: center;
+}
+.question .sub-title {
+    margin-bottom: 6rem;
+}
+.question__sub-title {
+    font-family: var(--title-font);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.question__item:not(:last-child) {
+    margin-bottom: 6rem;
+}
+.question__list {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+.question__img {
+    display: block;
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+
+
+@media screen and (min-width: 1440px)  {
+    .question__item:not(:last-child) {
+        margin-bottom: 0;
+    }
+    .question__list {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 50rem);
+        grid-template-rows: repeat(2, 30rem);
+        justify-content: center;
+        column-gap: .5rem;
+        row-gap: .5rem;
+    }
+    .question__img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .question__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 5rem 2rem;
+        text-align: left;
+        background-image: linear-gradient(to right, #ffbb43, 20%, #fff);
+    }
+    .question__item:nth-child(3) {
+        background-image: linear-gradient(to top, #ffbb43, 20%, #fff);
+    }
+    .question__item:nth-child(2) {
+        background-image: linear-gradient(to bottom, #ffbb43, 20%, #fff);
+    }
+    .question__item-img {
+        padding: 1rem;
+        background-color: var(--second-brand-color);
+    }
+
+
+
+    .hero__wrapper {
+        background-color: var(--third-brand-color);
+        background-image: url('../img/bg2.jpeg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    .hero__wrapper::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: block;
+        content: '';
+        height: 10rem;
+        background-image: url("data:image/svg+xml,%3Csvg fill='%23fff' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 297 297' style='enable-background:new 0 0 297 297;' xml:space='preserve'%3E%3Cg%3E%3Cpolygon points='33,66 0,66 66,148 0,231 33,231 99,148 '/%3E%3Cpolygon points='83,66 50,66 116,148 50,231 83,231 149,148 '/%3E%3Cpolygon points='133,66 100,66 166,148 100,231 133,231 199,148 '/%3E%3Cpolygon points='231,66 149,66 215,148 149,231 231,231 297,148 '/%3E%3C/g%3E%3C/svg%3E");
+        background-position: center;
+        background-size: contain;
+    }
+    .hero__wrapper::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: block;
+        content: '';
+        height: 10rem;
+        background-image: url("data:image/svg+xml,%3Csvg fill='%23fff' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 297 297' style='enable-background:new 0 0 297 297;' xml:space='preserve'%3E%3Cg%3E%3Cpolygon points='33,66 0,66 66,148 0,231 33,231 99,148 '/%3E%3Cpolygon points='83,66 50,66 116,148 50,231 83,231 149,148 '/%3E%3Cpolygon points='133,66 100,66 166,148 100,231 133,231 199,148 '/%3E%3Cpolygon points='231,66 149,66 215,148 149,231 231,231 297,148 '/%3E%3C/g%3E%3C/svg%3E");
+        background-position: center;
+        background-size: contain;
+        transform: scale(-1,-1);
+    }
+    .hero .title,
+    .hero .text,
+    .hero .btn {
+        color: var(--sub-text-color);
+    }
+    .hero .btn {
+        border-color: var(--sub-text-color);
+    }
+    .hero .btn:hover {
+       color: var(--main-text-color);
+       background-color: var(--sub-text-color);
+    }
+    .hero {
+        padding: 30rem 15rem;
+        text-align: right;
+    }
+    .hero .text,
+    .hero .btn {
+        margin-right: 0;
+    }
+
+
+
+    .contacts {
+        padding-left: 15rem;
+        padding-right: 15rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .contacts__box {
+        margin-bottom: 0;
+    }
+    .contacts__img {
+        margin: 0;
+        object-fit: cover;
+        border-radius: 15rem 0 15rem 0;
+    }
+    .contacts .btn {
+        margin-left: 0;
+        background-color: var(--main-text-color);
+        color: var(--sub-text-color);
+    }
+    .contacts .btn:hover {
+        background-color: transparent;
+        color: var(--main-text-color);
+    }
+    .contacts__item {
+        background-color: var(--first-brand-color);
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+
+
+
+    .policy__block {
+        margin: 0;
+    }
+    .policy__box {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
