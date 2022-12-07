@@ -119,13 +119,13 @@
         align-items: flex-start;
         padding: 5rem 2rem;
         text-align: left;
-        background-image: linear-gradient(to right, #ffbb43, 20%, #fff);
+        background-image: linear-gradient(to right, var(--second-brand-color), 20%, #fff);
     }
     .question__item:nth-child(3) {
-        background-image: linear-gradient(to top, #ffbb43, 20%, #fff);
+        background-image: linear-gradient(to top, var(--second-brand-color), 20%, #fff);
     }
     .question__item:nth-child(2) {
-        background-image: linear-gradient(to bottom, #ffbb43, 20%, #fff);
+        background-image: linear-gradient(to bottom, var(--second-brand-color), 20%, #fff);
     }
     .question__item-img {
         padding: 1rem;
