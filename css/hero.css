@@ -170,10 +170,10 @@
     .hero .title,
     .hero .text,
     .hero .btn {
-        color: var(--sub-text-color);
+        /* color: var(--sub-text-color); */
     }
     .hero .btn {
-        border-color: var(--sub-text-color);
+        /* border-color: var(--sub-text-color); */
     }
     .hero .btn:hover {
        color: var(--main-text-color);
@@ -186,6 +186,12 @@
     .hero .text,
     .hero .btn {
         margin-right: 0;
+    }
+    .hero__block {
+        width: 50%;
+        background-color: var(--first-brand-color);
+        padding: 2rem;
+        margin-left: auto;
     }
 
 
